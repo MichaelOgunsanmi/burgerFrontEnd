@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "burgerbuilder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,10 +11,10 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start || node ./node_modules/react-scripts/bin/react-scripts start",
+    "build": "react-scripts build || node ./node_modules/react-scripts/bin/react-scripts build",
+    "test": "react-scripts test || node ./node_modules/react-scripts/bin/react-scripts test",
+    "eject": "react-scripts eject || node ./node_modules/react-scripts/bin/react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
