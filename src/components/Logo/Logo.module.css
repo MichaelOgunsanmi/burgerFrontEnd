@@ -1,0 +1,12 @@
+.Logo {
+  background-color: white;
+  height: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.Logo img {
+  height: 100%;
+}
+
+/*# sourceMappingURL=Logo.module.css.map */
