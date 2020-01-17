@@ -92,3 +92,23 @@ C
 ,src/components/UI/Spinner/Spinner.module.css,0\7\07c0dbd9be3749ce2a13bed0d7ffdf190f73113f
 n
 >src/HigherOrderComponents/withErrorHandler/withErrorHandler.js,c\c\ccb52acdcee5afae52dd88ab632ac459d2de5793
+o
+?src/components/Order/CheckoutSummary/CheckoutSummary.module.css,a\1\a13a6bd737b8a3e97d74cd58a6318bcfaa99e24b
+S
+#src/containers/Checkout/Checkout.js,0\8\08ab5a739f0d24d2230cbe8965ec16d13e1670ce
+U
+%src/components/Order/Order.module.css,d\2\d251d05cae30e53a34e95b6d94c4467467a33d63
+g
+7src/components/Order/CheckoutSummary/CheckoutSummary.js,d\a\da8889ed8f6557cd79b333a64c3a6f78c985cc65
+j
+:src/containers/Checkout/ContactData/ContactData.module.css,1\e\1eec5baffc1c8975bffd251f12027ca489c5af20
+X
+(src/components/UI/Input/Input.module.css,1\b\1b995d6bc1bcc1e3afb46e56aadc67ff5b28c500
+b
+2src/containers/Checkout/ContactData/ContactData.js,b\a\ba0325111b633539da83a9dc9d1a720896978224
+M
+src/components/Order/Order.js,7\8\786f4b2bb1dec42941b6edae18edaeac6a323059
+O
+src/containers/Orders/Orders.js,a\6\a6ae2cbe6694f7d3d39b1781cf512c1aa29c6464
+P
+ src/components/UI/Input/Input.js,1\5\15149ead89c1b561ca3494d4c9068572dff80367
