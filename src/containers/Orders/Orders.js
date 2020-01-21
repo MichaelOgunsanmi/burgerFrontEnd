@@ -1,47 +1,52 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import axios from '../../axios-orders';
+
+import {fetchOrders} from "../../store/actions";
 
 import WithErrorHandler from "../../HigherOrderComponents/withErrorHandler/withErrorHandler";
 import Order from "../../components/Order/Order";
+import Spinner from "../../components/UI/Spinner/Spinner";
+
 
 class Orders extends Component {
-    state = {
-        loading: true,
-        orders: []
-    };
 
-    async componentDidMount() {
-        try {
-            const response = await axios.get('/orders.json');
-            const fetchedOrders = [];
-
-            for (let key in response.data) {
-                fetchedOrders.push({
-                    ...response.data[key],
-                    id: key
-                })
-            }
-
-            this.setState({loading: false, orders: fetchedOrders})
-        }catch(e){
-            this.setState({loading: false});
-        }
+    componentDidMount() {
+        this.props.onFetchOrders()
     }
 
-
     render() {
+        let orders = <Spinner/>;
+        if (!this.props.loading)
+            orders = this.props.orders.map( order => (
+                        <Order
+                            key={order.id}
+                            ingredients={order.ingredients}
+                            price={+order.price}
+                        />
+                    ))
+            ;
         return (
             <div>
-                {this.state.orders.map( order => (
-                    <Order
-                        key={order.id}
-                        ingredients={order.ingredients}
-                        price={+order.price}
-                    />
-                ))}
+                {orders}
             </div>
         );
     }
 }
 
-export default WithErrorHandler(Orders, axios);
+const mapStateToProps = state => {
+    return {
+        orders: state.ORDER.orders,
+        loading: state.ORDER.loading
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onFetchOrders: () => dispatch(fetchOrders())
+    }
+};
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(WithErrorHandler(Orders, axios));

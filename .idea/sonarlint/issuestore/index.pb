@@ -112,3 +112,7 @@ O
 src/containers/Orders/Orders.js,a\6\a6ae2cbe6694f7d3d39b1781cf512c1aa29c6464
 P
  src/components/UI/Input/Input.js,1\5\15149ead89c1b561ca3494d4c9068572dff80367
+D
+src/store/actions.js,4\0\4063f66b84b90c840c4871430608d36c19a1b655
+D
+src/store/reducer.js,d\4\d43d227108802025133aac9162d49553ad1776b3
