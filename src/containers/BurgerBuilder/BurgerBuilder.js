@@ -19,13 +19,13 @@ import Modal from "../../components/UI/Modal/Modal";
 import Spinner from "../../components/UI/Spinner/Spinner";
 
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
     state = {
         purchaseable: false,
         purchasing: false,
     };
 
-    async componentDidMount() {
+    componentDidMount() {
         this.props.onInitIngredients();
     }
 
