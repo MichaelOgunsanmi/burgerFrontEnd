@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from './Order.module.css'
-import BurgerIngredients from "../Burger/BurgerIngredients/BurgerIngredients";
 
 const Order = (props) => {
     const transformedIngredients = [];

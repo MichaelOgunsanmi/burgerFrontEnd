@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import {updateObject} from "../utility";
+import {updateObject} from "../../shared/utility";
 
 
 const initialState = {
@@ -57,7 +57,7 @@ const reducer = (oldState = initialState, action) => {
 
         case actionTypes.PURCHASE_BURGER_FAIL:
             return purchaseBurgerFail(oldState, action);
-             
+
         case actionTypes.FETCH_ORDERS_START:
             return fetchOrdersStart(oldState, action);
 

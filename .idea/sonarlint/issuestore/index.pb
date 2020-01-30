@@ -112,7 +112,17 @@ O
 src/containers/Orders/Orders.js,a\6\a6ae2cbe6694f7d3d39b1781cf512c1aa29c6464
 P
  src/components/UI/Input/Input.js,1\5\15149ead89c1b561ca3494d4c9068572dff80367
+R
+"src/store/actions/burgerBuilder.js,e\8\e853ed4b66e57b20c6ba853b4fd8ece41f222ef9
+J
+src/store/actions/index.js,4\0\40cded9dc03b94a106f2fa84d565c58ff6ff9564
+J
+src/store/actions/order.js,a\8\a8c78e1482cb6da560ad60740b41ee2b6dad8389
 D
-src/store/actions.js,4\0\4063f66b84b90c840c4871430608d36c19a1b655
-D
-src/store/reducer.js,d\4\d43d227108802025133aac9162d49553ad1776b3
+src/store/utility.js,9\0\908159f7c4ff7574cc44df669b9f3c86bdb2843b
+P
+ src/store/actions/actionTypes.js,4\6\463ee0598b70e0185ddaca369ce9d791577a418b
+S
+#src/store/reducers/burgerBuilder.js,2\2\220317b79f5a4b794f37e2d6fd1d38e8b6a0c18b
+K
+src/store/reducers/order.js,f\2\f2f374c873ab489f91e4ef6bc854dc05e9433d04
