@@ -118,11 +118,21 @@ J
 src/store/actions/index.js,4\0\40cded9dc03b94a106f2fa84d565c58ff6ff9564
 J
 src/store/actions/order.js,a\8\a8c78e1482cb6da560ad60740b41ee2b6dad8389
-D
-src/store/utility.js,9\0\908159f7c4ff7574cc44df669b9f3c86bdb2843b
 P
  src/store/actions/actionTypes.js,4\6\463ee0598b70e0185ddaca369ce9d791577a418b
 S
 #src/store/reducers/burgerBuilder.js,2\2\220317b79f5a4b794f37e2d6fd1d38e8b6a0c18b
 K
 src/store/reducers/order.js,f\2\f2f374c873ab489f91e4ef6bc854dc05e9433d04
+O
+src/store/reducers/auth.test.js,5\5\55e17ebc5d68b23c6461c8715c7d06e02baa86aa
+;
+.firebaserc,3\6\368d8a929a4bff0376a597a4de99b28a56e8efc3
+q
+Asrc/components/Navigation/NavigationItems/NavigationItems.test.js,7\a\7afd9122b140cdeb9126c08151025cb9de038547
+b
+2src/containers/BurgerBuilder/BurgerBuilder.test.js,0\6\062f3f4c7ba413be8e3157d8c1f40f8b6a5c5fc1
+=
+firebase.json,5\9\59951656e3803454427cfe9d761fed1df10b7528
+J
+src/store/reducers/auth.js,a\a\aa860c86f721121f4cd20fb45dba4bb89b1e81e3

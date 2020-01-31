@@ -1,17 +1,18 @@
 import {
+    PURCHASE_BURGER,
     PURCHASE_BURGER_SUCCESS,
     PURCHASE_BURGER_FAIL,
     PURCHASE_BURGER_START,
     PURCHASE_INIT,
     FETCH_ORDERS_START,
     FETCH_ORDERS_SUCCESS,
-    FETCH_ORDERS_FAIL
+    FETCH_ORDERS_FAIL, FETCH_ORDERS
 } from "./actionTypes";
 
 import axios from "../../axios-orders";
 
 
-const purchaseBurgerSuccess = (id, orderData) => {
+export const purchaseBurgerSuccess = (id, orderData) => {
     return {
         type: PURCHASE_BURGER_SUCCESS,
         orderId: id,
@@ -33,16 +34,10 @@ export const purchaseBurgerStart = () => {
 };
 
 export const purchaseBurger = (orderData, token) => {
-    return dispatch => {
-        dispatch(purchaseBurgerStart());
-
-        axios.post('/orders.json?auth=' + token, orderData)
-            .then(response => {
-                dispatch(purchaseBurgerSuccess(response.data.name, orderData))
-            })
-            .catch(error => {
-                purchaseBurgerFail(error)
-            });
+    return {
+        type: PURCHASE_BURGER,
+        orderData,
+        token
     }
 };
 
@@ -53,7 +48,7 @@ export const purchaseInit = () => {
 };
 
 
-const fetchOrdersSuccess = (orders) => {
+export const fetchOrdersSuccess = (orders) => {
     return {
         type: FETCH_ORDERS_SUCCESS,
         orders
@@ -74,32 +69,9 @@ export const fetchOrdersStart = () => {
 };
 
 export const fetchOrders = (token, userId) => {
-    return dispatch => {
-        dispatch(fetchOrdersStart());
-
-        const queryParams = `?auth=${token}&orderBy="userId"&equalTo="${userId}"`;
-
-        axios.get('/orders.json' + queryParams)
-            .then(response => {
-                const fetchedOrders = [];
-
-                for (let key in response.data) {
-                    fetchedOrders.push({
-                        ...response.data[key],
-                        id: key
-                    })
-                }
-
-                dispatch(fetchOrdersSuccess(fetchedOrders))
-            })
-            .catch(error => {
-                dispatch(fetchOrdersFail(error))
-            });
+    return {
+        type: FETCH_ORDERS,
+        token,
+        userId
     }
 };
-
-// export const fetchOrdersInit = () => {
-//     return{
-//         type: PURCHASE_INIT
-//     }
-// };

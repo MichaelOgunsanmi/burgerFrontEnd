@@ -1,6 +1,10 @@
-import axios from "../../axios-orders";
-
-import {ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS, FETCH_INGREDIENTS_FAILED} from './actionTypes';
+import {
+    ADD_INGREDIENT,
+    REMOVE_INGREDIENT,
+    SET_INGREDIENTS,
+    FETCH_INGREDIENTS_FAILED,
+    INIT_INGREDIENTS
+} from './actionTypes';
 
 export const addIngredient = ingredientName => {
     return {
@@ -30,13 +34,7 @@ export const fetchIngredientsFailed = () => {
 };
 
 export const initIngredients = () => {
-    return dispatch => {
-        axios.get('https://burger-f05dc.firebaseio.com/ingredients.json')
-            .then(ingredients => {
-                dispatch(setIngredients(ingredients.data))
-            })
-            .catch(error => {
-               dispatch(fetchIngredientsFailed())
-        });
+    return {
+        type: INIT_INGREDIENTS
     }
 };
