@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Auxiliary from "../Auxillary/Auxillary";
 import Modal from "../../components/UI/Modal/Modal";
 
+
 const WithErrorHandler = (WrappedComponent, axios) => {
     return class extends Component{
         state = {
@@ -52,3 +53,23 @@ const WithErrorHandler = (WrappedComponent, axios) => {
 };
 
 export default WithErrorHandler;
+
+
+// import useHttpErrorHandler from "../../hooks/http-error-handler";
+// const WithErrorHandler = (WrappedComponent, axios) => {
+//     return props => {
+//         const [error, errorConfirmedHandler] = useHttpErrorHandler(axios);
+//
+//         return (
+//             <Auxiliary>
+//                 <Modal
+//                     show={error}
+//                     modalClosed={errorConfirmedHandler}>
+//                     {error ? error.message :  null}
+//                 </Modal>
+//                 <WrappedComponent {...props}/>
+//             </Auxiliary>
+//         );
+//     }
+//
+// };

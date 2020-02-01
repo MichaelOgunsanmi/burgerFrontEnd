@@ -146,3 +146,9 @@ G
 src/store/sagas/auth.js,c\e\ce0c48d7e253d30b622b7bb328cef9e2f71810af
 H
 src/store/sagas/order.js,1\9\19e92308d0dea05e2bee29d13a86cd5b019fccba
+T
+$src/containers/Auth/Logout/Logout.js,3\5\35868a8aa4bbf345b326fe684c3e5128116401c3
+K
+src/containers/Auth/Auth.js,6\2\62062c9087e5d86cfa25843fdabb679e58022ccc
+O
+src/hooks/http-error-handler.js,d\5\d519d600d2aa7771d660335abc2a387ef2567dcc
