@@ -136,3 +136,13 @@ b
 firebase.json,5\9\59951656e3803454427cfe9d761fed1df10b7528
 J
 src/store/reducers/auth.js,a\a\aa860c86f721121f4cd20fb45dba4bb89b1e81e3
+P
+ src/store/sagas/burgerBuilder.js,5\0\504726a6b5efa90521552f8e41b83b32870f7463
+I
+src/store/actions/auth.js,6\a\6adb01efc039bc8a4de3ac3bafcb3d9d5ba92d37
+H
+src/store/sagas/index.js,a\4\a4c9a5f9e79ea568abe4c176d0ee5d1b358ff096
+G
+src/store/sagas/auth.js,c\e\ce0c48d7e253d30b622b7bb328cef9e2f71810af
+H
+src/store/sagas/order.js,1\9\19e92308d0dea05e2bee29d13a86cd5b019fccba
